@@ -4,7 +4,7 @@ import Navitems from "@/components/Navitems";
 import UserDropdown from "@/components/UserDropdown";
 
 
-const Header = () => {
+const Header = ({user}:{user:User}) => {
     return (
        <header  className="sticky top-0 header">
 
@@ -19,7 +19,7 @@ const Header = () => {
                </nav>
 
                {/* UserDropdown */}
-               <UserDropdown/>
+               <UserDropdown user={user}/>
 
            </div>
 
